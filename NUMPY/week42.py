@@ -8,3 +8,4 @@ h=np.concatenate((e,g),axis=0)
 print(h)
 h=np.concatenate((e,g),axis=1)
 print(h)
+

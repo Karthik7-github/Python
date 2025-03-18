@@ -1,0 +1,16 @@
+import numpy as np
+a=np.array([[10,20],[30,40]])
+print("Array a : \n",a)
+b=np.array([[50,60],[70,80]])
+print("Array b : \n",b)
+c=np.concatenate([a,b])
+print(f"After concatination : \n",c)
+d=np.concatenate([a,b],axis=0)
+print(f"axis = 0 \n {d}")
+e=np.concatenate([a,b],axis=1)
+print(f"axis = 1 \n {e}")
+f=np.concatenate([a,b],axis=-1)
+print(f"axis = -1 \n {f}")
+g=np.concatenate([a,b],axis=None)
+print(f"axis = null \n {g}")
+
