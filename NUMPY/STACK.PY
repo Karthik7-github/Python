@@ -1,4 +1,4 @@
-# import numpy as np
+import numpy as np
 # a = np.array([1,2,3])
 # b=np.array([4,5,6])
 # c=np.stack([a,b])
@@ -61,6 +61,7 @@
 # f=np.hstack([a1,b1])
 # print(f"-1 : \n {f}")
 
+
 # import numpy as np
 # a=np.arange(1,100,10)
 # print(a)
@@ -94,7 +95,7 @@
 # g1=np.remainder(a,3)
 # print(g1)
 
-import numpy as np
+
 # a=np.arange(1,4,1)
 # print(f"Shape of a : {a.shape}")
 # print(f"array is : {a}")
@@ -104,12 +105,45 @@ import numpy as np
 # res = a + b
 # print(f" res : {res}")
 
-a1=np.array([1,2,3])
-print(f"Shape of a1 : {a1.shape}")
-print(f"Array is : {a1}")
-b1=np.array([[4],[5],[6]])
-print(f"Shape of b1 : {b1.shape}")
-print(f"Array is : {b1}")
-res= a1 + b1
-print(f"Shape of res : {res.shape}")
-print(f"Array is : {res}")
+
+# a1=np.array([1,2,3])
+# print(f"Shape of a1 : {a1.shape}")
+# print(f"Array is : {a1}")
+# b1=np.array([[4],[5],[6]])
+# print(f"Shape of b1 : {b1.shape}")
+# print(f"Array is : {b1}")
+# res= a1 + b1
+# print(f"Shape of res : {res.shape}")
+# print(f"Array is : {res}")
+
+
+# import numpy as np
+# a = np.arange(1,10,1)
+# print(f"max : {np.max(a)}")
+# print(f"min : {np.min(a)}")
+# print(f"avg : {np.average(a)}")
+# print(f"sum : {np.sum(a)}")
+# print(f"reverse : {np.flip(a)}")
+# print(f"median : {np.median(a)}")
+# print(f"mean : {np.mean(a)}")
+# a[0] = 11
+# print(f"after modification : {a}")
+# a[4:]= 22
+# print(f"after modification : {a}")
+# print(f"after inserting : {np.insert(a,3,a)}")
+# print(f"after deletion : {np.delete(a,6)}")
+
+# a=np.array([24,43,343,43,4,2,23,4034,4,45,5,342])
+# x=np.where(a%4==1)
+# print(x)
+# x=np.searchsorted(np.sort(a),25)
+# print(np.sort(a))
+# print(x)
+# b=np.searchsorted([6,8,9],7)
+# print(b)
+
+
+arr=np.array([5,1,3,7])
+
+x=np.searchsorted(arr,2)
+print(x)
