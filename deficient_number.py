@@ -10,3 +10,4 @@ if s<n:
     print("Deficient number")
 else:
     print("not a Deficient number")
+
