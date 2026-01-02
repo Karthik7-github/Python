@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Blinking Link on Hover</title>
+  <style>
+    :root{
+      --accent: #0077ff;
+    }
+
+    body{
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      margin: 0;
+      background: #f7f8fb;
+    }
+
+    .nav {
+      display: flex;
+      gap: 20px;            /* space between links */
+      padding: 20px;
+    }
+
+    .nav a {
+      text-decoration: none;
+      color: var(--accent);
+      font-weight: 600;
+      padding: 8px 12px;
+      border-radius: 6px;
+      transition: transform 0.14s ease;
+    }
+
+    .nav a:hover {
+      transform: translateY(-2px);
+    }
+
+    /* Blink animation only while hovered */
+    @keyframes blink {
+      0%   { opacity: 1; text-shadow: none; }
+      50%  { opacity: 0; text-shadow: none; }
+      100% { opacity: 1; text-shadow: none; }
+    }
+
+    /* Apply a short blink on hover */
+    .nav a.blink:hover {
+      animation: blink 0.6s linear infinite;
+    }
+
+    /* alternative: glow + blink (optional) */
+    @keyframes glowBlink {
+      0%   { opacity: 1; text-shadow: 0 0 0px rgba(0,119,255,0); }
+      50%  { opacity: 0.15; text-shadow: 0 0 8px rgba(0,119,255,0.6); }
+      100% { opacity: 1; text-shadow: 0 0 0px rgba(0,119,255,0); }
+    }
+
+    /* uncomment to use glow instead:
+    .nav a.glow-blick:hover {
+      animation: glowBlink 0.8s ease-in-out infinite;
+    }
+    */
+  </style>
+</head>
+<body>
+  <nav class="nav">
+    <a href="#" class="blink">Home</a>
+    <a href="#" class="blink">About</a>
+    <a href="#" class="blink">Projects</a>
+    <a href="#" class="blink">Contact</a>
+  </nav>
+</body>
+</html>

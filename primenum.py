@@ -7,12 +7,12 @@ def prime(num):
         else:
             return True
 
-def next_prime(n):
-    next_num = n+1
-    while True:
-        if prime(next_num):
-            return next_num
-        next_num +=1
+# def next_prime(n):
+#     next_num = n+1
+#     while True:
+#         if prime(next_num):
+#             return next_num
+#         next_num +=1
 
 num = int(input())
-print(next_prime(num))
+print(prime(num))

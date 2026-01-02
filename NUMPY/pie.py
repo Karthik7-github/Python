@@ -44,14 +44,14 @@ import numpy as np
 # pit.boxplot(data)
 # pit.show()
 
-placements = [400,300,200,100,50]
-branch = ['cse','csm','csc','csd','cso']
+# placements = [400,300,200,100,50]
+# branch = ['cse','csm','csc','csd','cso']
 
-pit.scatter(placements,branch)
-placements1 = [350,250,150,100,90]
-branch1 = ['cse','csm','csc','csd','cso']
-pit.scatter(placements1,branch1,marker='+',alpha=0.7,s=1000)
-pit.show()
+# pit.scatter(placements,branch)
+# placements1 = [350,250,150,100,90]
+# branch1 = ['cse','csm','csc','csd','cso']
+# pit.scatter(placements1,branch1,marker='+',alpha=0.7,s=1000)
+# pit.show()
 
 
 
